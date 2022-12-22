@@ -1,0 +1,35 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+      - id: config
+        uses: actions/configure-pages@v2
+      - run: yarn install --immutable
+      - run: yarn build
+        env:
+          NODE_ENV: production
+          BASE_PATH: ${{ steps.config.outputs.base_path }}
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v1

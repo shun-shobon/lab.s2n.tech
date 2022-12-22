@@ -12,10 +12,9 @@ export default defineConfig(async () => {
     ]),
   );
 
-  console.log(input);
-
   return {
     root: "src",
+    base: process.env["BASE_PATH"] ?? "/",
     plugins: [
       react(),
       createHtmlPlugin({

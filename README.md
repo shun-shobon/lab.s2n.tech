@@ -1,3 +1,3 @@
-# Web Test Template
+# Web Graphics
 
-> Project template for web testing
+Web を使ったグラフィックス表現のサンプル集。

@@ -1,0 +1,23 @@
+:where(*) {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(244, 233, 246, 1) 0%,
+    rgba(243, 204, 246, 1) 4%,
+    rgba(160, 176, 228, 1) 8%,
+    rgba(96, 149, 207, 1) 12%,
+    rgba(18, 59, 138, 1) 43%,
+    rgba(14, 26, 84, 1) 100%
+  );
+}
+
+#stars {
+  width: 100%;
+  height: 100%;
+}

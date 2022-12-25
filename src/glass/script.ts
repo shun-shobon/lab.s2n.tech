@@ -1,6 +1,13 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+import skyboxRight from "./assets/skybox-right.png";
+import skyboxLeft from "./assets/skybox-left.png";
+import skyboxTop from "./assets/skybox-top.png";
+import skyboxBottom from "./assets/skybox-bottom.png";
+import skyboxFront from "./assets/skybox-front.png";
+import skyboxBack from "./assets/skybox-back.png";
+
 class Glass {
   #canvas: HTMLCanvasElement;
   #scene: THREE.Scene;
@@ -80,12 +87,12 @@ class Glass {
 // Skyboxのテクスチャ
 // x+-、y+-、z+-の順に指定する
 const urls = [
-  "assets/skybox-right.png",
-  "assets/skybox-left.png",
-  "assets/skybox-top.png",
-  "assets/skybox-bottom.png",
-  "assets/skybox-front.png",
-  "assets/skybox-back.png",
+  skyboxRight,
+  skyboxLeft,
+  skyboxTop,
+  skyboxBottom,
+  skyboxFront,
+  skyboxBack,
 ];
 
 // NOTE: load()がstring[]を受け付けるのでloadAsync()もstring[]のはずだが、どうやら@types/threeの型定義が間違っている模様

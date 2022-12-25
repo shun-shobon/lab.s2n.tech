@@ -23,6 +23,8 @@ export default defineConfig(async () => {
     ],
     build: {
       outDir: "../dist",
+      emptyOutDir: true,
+      target: "esnext",
       rollupOptions: {
         input,
       },

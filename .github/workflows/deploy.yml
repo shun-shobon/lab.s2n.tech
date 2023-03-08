@@ -23,7 +23,7 @@ jobs:
           node-version: 18
           cache: yarn
       - id: config
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
       - run: yarn install --immutable
       - run: yarn build
         env:

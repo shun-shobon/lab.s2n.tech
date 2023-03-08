@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: shun-shobon/actions/setup-node
+      - uses: shun-shobon/actions/setup-node@master
         with:
           node-version: "lts/*"
 

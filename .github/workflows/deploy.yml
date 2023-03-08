@@ -34,7 +34,7 @@ jobs:
       - id: config
         uses: actions/configure-pages@v3
 
-      - run: pnpm install --from-lockfile
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
         env:
           NODE_ENV: production

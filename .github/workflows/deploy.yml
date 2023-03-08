@@ -20,15 +20,26 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: yarn
+          node-version: "lts/*"
+      - run: corepack enable
+      - id: pnpm
+        run: echo "pnpm-store-dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm.outputs.pnpm-store-dir }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
       - id: config
-        uses: actions/configure-pages@v2
-      - run: yarn install --immutable
-      - run: yarn build
+        uses: actions/configure-pages@v3
+
+      - run: pnpm install --from-lockfile
+      - run: pnpm build
         env:
           NODE_ENV: production
           BASE_PATH: ${{ steps.config.outputs.base_path }}
+
       - uses: actions/upload-pages-artifact@v1
         with:
           path: dist

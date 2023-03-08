@@ -9,7 +9,6 @@ import skyboxTop from "./assets/skybox-top.png";
 import skyboxBottom from "./assets/skybox-bottom.png";
 import skyboxFront from "./assets/skybox-front.png";
 import skyboxBack from "./assets/skybox-back.png";
-import { METHODS } from "http";
 
 class Glass {
   #canvas: HTMLCanvasElement;
@@ -124,8 +123,6 @@ const urls = [
   skyboxBack,
 ];
 
-// NOTE: load()がstring[]を受け付けるのでloadAsync()もstring[]のはずだが、どうやら@types/threeの型定義が間違っている模様
-// @ts-expect-error
 const skybox = await new THREE.CubeTextureLoader().loadAsync(urls);
 
 const canvas = document.getElementById("canvas") as HTMLCanvasElement;

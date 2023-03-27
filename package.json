@@ -18,7 +18,7 @@
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.30",
     "@types/react-dom": "^18.0.11",
-    "@types/three": "^0.149.0",
+    "@types/three": "^0.150.0",
     "@vitejs/plugin-react": "^3.1.0",
     "fast-glob": "^3.2.12",
     "prettier": "^2.8.7",

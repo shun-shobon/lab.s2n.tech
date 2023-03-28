@@ -1,20 +1,24 @@
 const canvas = document.getElementById("stars") as HTMLCanvasElement;
-const ctx = canvas.getContext("2d")!;
+const maybeCtx = canvas.getContext("2d");
+if (!maybeCtx) {
+  throw new Error("No canvas context");
+}
+const ctx = maybeCtx;
 
-type Star = {
+interface Star {
   x: number;
   y: number;
   size: number;
   t: number;
   speed: number;
-};
+}
 
 function resize() {
   canvas.width = window.innerWidth * window.devicePixelRatio;
   canvas.height = window.innerHeight * window.devicePixelRatio;
 }
 
-const stars: Star[] = [];
+const stars: Array<Star> = [];
 const starCount = 400;
 
 function createStar(): Star {
@@ -44,7 +48,7 @@ function draw() {
 }
 
 function init() {
-  for (let i = 0; i < starCount; i++) {
+  for (let i = 0; i < starCount; i += 1) {
     stars.push(createStar());
   }
 }
@@ -56,13 +60,13 @@ init();
 function loop() {
   draw();
 
-  for (let i = 0; i < stars.length; i++) {
-    stars[i]!.t += stars[i]!.speed;
+  stars.forEach((star, idx) => {
+    star.t += star.speed;
 
-    if (stars[i]!.t > Math.PI) {
-      stars[i] = createStar();
+    if (star.t > Math.PI) {
+      stars[idx] = createStar();
     }
-  }
+  });
 
   requestAnimationFrame(loop);
 }

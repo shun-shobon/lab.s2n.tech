@@ -1,12 +1,12 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-import skyboxRight from "./assets/skybox-right.png";
-import skyboxLeft from "./assets/skybox-left.png";
-import skyboxTop from "./assets/skybox-top.png";
+import skyboxBack from "./assets/skybox-back.png";
 import skyboxBottom from "./assets/skybox-bottom.png";
 import skyboxFront from "./assets/skybox-front.png";
-import skyboxBack from "./assets/skybox-back.png";
+import skyboxLeft from "./assets/skybox-left.png";
+import skyboxRight from "./assets/skybox-right.png";
+import skyboxTop from "./assets/skybox-top.png";
 
 class Glass {
   #canvas: HTMLCanvasElement;
@@ -42,7 +42,7 @@ class Glass {
     envMap.mapping = THREE.CubeRefractionMapping;
     const geometry = new THREE.TorusGeometry();
     const material = new THREE.MeshBasicMaterial({
-      color: 0xcccccc,
+      color: 0xcc_cc_cc,
       envMap,
       // 屈折率
       refractionRatio: 0.4,

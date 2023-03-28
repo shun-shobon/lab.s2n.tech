@@ -7,7 +7,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss}'"
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:eslint": "eslint src --ext .ts,.tsx",
+    "lint:prettier": "prettier --check src",
+    "lint-fix": "pnpm run '/^lint-fix:.*/'",
+    "lint-fix:eslint": "pnpm run lint:eslint --fix",
+    "lint-fix:prettier": "prettier --write src"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,11 +20,13 @@
     "three": "^0.150.1"
   },
   "devDependencies": {
+    "@shun-shobon/eslint-config-base": "^0.3.1",
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.30",
     "@types/react-dom": "^18.0.11",
     "@types/three": "^0.150.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.36.0",
     "fast-glob": "^3.2.12",
     "prettier": "^2.8.7",
     "typescript": "5.0.2",

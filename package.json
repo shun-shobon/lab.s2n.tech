@@ -20,7 +20,7 @@
     "three": "^0.152.2"
   },
   "devDependencies": {
-    "@shun-shobon/eslint-config-base": "^0.4.9",
+    "@shun-shobon/eslint-config-base": "^0.4.10",
     "@types/node": "^18.16.16",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",

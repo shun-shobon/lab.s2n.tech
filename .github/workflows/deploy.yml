@@ -31,7 +31,7 @@ jobs:
           NODE_ENV: production
           BASE_PATH: ${{ steps.config.outputs.base_path }}
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: dist
       - uses: actions/deploy-pages@v2

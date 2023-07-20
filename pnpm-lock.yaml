@@ -33,7 +33,7 @@ devDependencies:
     version: 0.154.0
   '@vitejs/plugin-react':
     specifier: ^4.0.3
-    version: 4.0.3(vite@4.4.4)
+    version: 4.0.3(vite@4.4.5)
   eslint:
     specifier: ^8.45.0
     version: 8.45.0
@@ -47,11 +47,11 @@ devDependencies:
     specifier: 5.1.6
     version: 5.1.6
   vite:
-    specifier: ^4.4.4
-    version: 4.4.4(@types/node@18.16.19)
+    specifier: ^4.4.5
+    version: 4.4.5(@types/node@18.16.19)
   vite-plugin-html:
     specifier: ^3.2.0
-    version: 3.2.0(vite@4.4.4)
+    version: 3.2.0(vite@4.4.5)
 
 packages:
 
@@ -836,7 +836,7 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@vitejs/plugin-react@4.0.3(vite@4.4.4):
+  /@vitejs/plugin-react@4.0.3(vite@4.4.5):
     resolution: {integrity: sha512-pwXDog5nwwvSIzwrvYYmA2Ljcd/ZNlcsSG2Q9CNDBwnsd55UGAyr2doXtB5j+2uymRCnCfExlznzzSFbBRcoCg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -846,7 +846,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.5)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.5)
       react-refresh: 0.14.0
-      vite: 4.4.4(@types/node@18.16.19)
+      vite: 4.4.5(@types/node@18.16.19)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2000,8 +2000,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
+  /postcss@8.4.26:
+    resolution: {integrity: sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -2357,7 +2357,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-html@3.2.0(vite@4.4.4):
+  /vite-plugin-html@3.2.0(vite@4.4.5):
     resolution: {integrity: sha512-2VLCeDiHmV/BqqNn5h2V+4280KRgQzCFN47cst3WiNK848klESPQnzuC3okH5XHtgwHH/6s1Ho/YV6yIO0pgoQ==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -2374,11 +2374,11 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.4.4(@types/node@18.16.19)
+      vite: 4.4.5(@types/node@18.16.19)
     dev: true
 
-  /vite@4.4.4(@types/node@18.16.19):
-    resolution: {integrity: sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==}
+  /vite@4.4.5(@types/node@18.16.19):
+    resolution: {integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2407,7 +2407,7 @@ packages:
     dependencies:
       '@types/node': 18.16.19
       esbuild: 0.18.11
-      postcss: 8.4.25
+      postcss: 8.4.26
       rollup: 3.26.2
     optionalDependencies:
       fsevents: 2.3.2

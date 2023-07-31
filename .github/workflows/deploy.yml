@@ -21,7 +21,7 @@ jobs:
 
       - uses: shun-shobon/actions/setup-node@master
         with:
-          node-version: "lts/*"
+          node-version-file: .tool-versions
 
       - id: config
         uses: actions/configure-pages@v3

@@ -28,7 +28,7 @@
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.46.0",
     "fast-glob": "^3.3.1",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "typescript": "5.1.6",
     "vite": "^4.4.7",
     "vite-plugin-html": "^3.2.0"

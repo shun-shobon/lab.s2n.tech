@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.4.18
     version: 0.4.18(eslint@8.46.0)(typescript@5.1.6)
   '@types/node':
-    specifier: ^18.17.1
-    version: 18.17.1
+    specifier: ^18.17.2
+    version: 18.17.2
   '@types/react':
     specifier: ^18.2.18
     version: 18.2.18
@@ -51,7 +51,7 @@ devDependencies:
     version: 5.1.6
   vite:
     specifier: ^4.4.8
-    version: 4.4.8(@types/node@18.17.1)
+    version: 4.4.8(@types/node@18.17.2)
   vite-plugin-html:
     specifier: ^3.2.0
     version: 3.2.0(vite@4.4.8)
@@ -654,8 +654,8 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: true
 
-  /@types/node@18.17.1:
-    resolution: {integrity: sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==}
+  /@types/node@18.17.2:
+    resolution: {integrity: sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -849,7 +849,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.9)
       react-refresh: 0.14.0
-      vite: 4.4.8(@types/node@18.17.1)
+      vite: 4.4.8(@types/node@18.17.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2877,10 +2877,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.4.8(@types/node@18.17.1)
+      vite: 4.4.8(@types/node@18.17.2)
     dev: true
 
-  /vite@4.4.8(@types/node@18.17.1):
+  /vite@4.4.8(@types/node@18.17.2):
     resolution: {integrity: sha512-LONawOUUjxQridNWGQlNizfKH89qPigK36XhMI7COMGztz8KNY0JHim7/xDd71CZwGT4HtSRgI7Hy+RlhG0Gvg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2908,7 +2908,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.17.1
+      '@types/node': 18.17.2
       esbuild: 0.18.11
       postcss: 8.4.26
       rollup: 3.26.2

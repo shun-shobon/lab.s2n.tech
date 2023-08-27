@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "run-s lint:*",
-    "lint:eslint": "eslint src --ext .ts,.tsx",
+    "lint:eslint": "eslint . --ext .ts,.tsx",
     "lint:prettier": "prettier --check .",
     "lint-fix": "run-s lint-fix:*",
     "lint-fix:eslint": "pnpm run lint:eslint --fix",

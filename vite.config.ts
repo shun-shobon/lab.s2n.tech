@@ -1,15 +1,15 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { createHtmlPlugin } from "vite-plugin-html";
 import fg from "fast-glob";
+import { defineConfig } from "vite";
+import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig(async () => {
   const html = await fg("src/**/*.html");
   const input = Object.fromEntries(
     html.map((path) => [
-      path.replace(/^src\//, "").replace(/\.html$/, ""),
+      path.replace(/^src\//u, "").replace(/\.html$/u, ""),
       path,
-    ]),
+    ])
   );
 
   return {

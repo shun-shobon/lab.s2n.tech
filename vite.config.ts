@@ -6,10 +6,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 export default defineConfig(async () => {
   const html = await fg("src/**/*.html");
   const input = Object.fromEntries(
-    html.map((path) => [
-      path.replace(/^src\//u, "").replace(/\.html$/u, ""),
-      path,
-    ])
+    html.map((path) => [path.replace(/^src\//u, ""), path])
   );
 
   return {

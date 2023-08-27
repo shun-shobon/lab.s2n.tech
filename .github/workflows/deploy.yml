@@ -17,21 +17,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Setup | Checkout
+        uses: actions/checkout@v3
 
-      - uses: shun-shobon/actions/setup-node@master
+      - name: Setup | Node
+        uses: shun-shobon/actions/setup-node@master
         with:
           node-version-file: .tool-versions
 
-      - id: config
+      - name: Setup | GitHub Pages
+        id: config
         uses: actions/configure-pages@v3
 
-      - run: pnpm build
+      - name: Build | Build
+        run: pnpm build
         env:
           NODE_ENV: production
           BASE_PATH: ${{ steps.config.outputs.base_path }}
 
-      - uses: actions/upload-pages-artifact@v2
+      - name: Deploy | Artifact
+        uses: actions/upload-pages-artifact@v2
         with:
           path: dist
-      - uses: actions/deploy-pages@v2
+
+      - name: Deploy | GitHub Pages
+        uses: actions/deploy-pages@v2

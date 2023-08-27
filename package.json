@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "run-s lint:*",
+    "lint:tsc": "tsc --noEmit",
     "lint:eslint": "eslint . --ext .ts,.tsx",
     "lint:prettier": "prettier --check .",
     "lint-fix": "run-s lint-fix:*",

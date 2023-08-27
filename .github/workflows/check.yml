@@ -6,12 +6,22 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - run: tsc
+          - run: eslint
+          - run: prettier
     steps:
-      - uses: actions/checkout@v3
-      - uses: shun-shobon/actions/setup-node@master
+      - name: Setup | Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup | Node
+        uses: shun-shobon/actions/setup-node@master
         with:
           node-version-file: .tool-versions
 
-      - run: pnpm lint
+      - name: Run | ${{ matrix.run }}
+        run: pnpm lint:${{ matrix.run }}

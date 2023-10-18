@@ -29,8 +29,8 @@ devDependencies:
     specifier: ^18.2.13
     version: 18.2.13
   '@types/three':
-    specifier: ^0.157.0
-    version: 0.157.0
+    specifier: ^0.157.1
+    version: 0.157.1
   '@vitejs/plugin-react':
     specifier: ^4.1.0
     version: 4.1.0(vite@4.4.11)
@@ -753,8 +753,8 @@ packages:
     resolution: {integrity: sha512-9w+a7bR8PeB0dCT/HBULU2fMqf6BAzvKbxFboYhmDtDkKPiyXYbjoe2auwsXlEFI7CFNMF1dCv3dFH5Poy9R1w==}
     dev: true
 
-  /@types/three@0.157.0:
-    resolution: {integrity: sha512-+BG+wqEyH506w23tKpwXnCTJb/MeyeQ/wcFlSFQ26Z9hS5Qde2vc7o+aqd+z98b38PVGuHa5GYxg/3CY7qrxFw==}
+  /@types/three@0.157.1:
+    resolution: {integrity: sha512-r0AH3/rmgjxsyWzESWReXLX39ezZQDtPzTmVWtvWdul/8PTo0URo/KCvQLgtU96L5BNjJRU9oz+gV30jxOEtIA==}
     dependencies:
       '@types/stats.js': 0.17.0
       '@types/webxr': 0.5.1

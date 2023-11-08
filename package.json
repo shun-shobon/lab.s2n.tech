@@ -23,8 +23,8 @@
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "^0.5.2",
     "@types/node": "^18.18.9",
-    "@types/react": "^18.2.36",
-    "@types/react-dom": "^18.2.14",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "@types/three": "^0.158.2",
     "@vitejs/plugin-react": "^4.1.1",
     "eslint": "^8.53.0",

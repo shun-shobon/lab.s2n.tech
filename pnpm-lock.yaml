@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.5.2
     version: 0.5.2(eslint@8.55.0)(typescript@5.3.3)
   '@types/node':
-    specifier: ^18.19.2
-    version: 18.19.2
+    specifier: ^18.19.3
+    version: 18.19.3
   '@types/react':
     specifier: ^18.2.42
     version: 18.2.42
@@ -51,7 +51,7 @@ devDependencies:
     version: 5.3.3
   vite:
     specifier: ^5.0.6
-    version: 5.0.6(@types/node@18.19.2)
+    version: 5.0.6(@types/node@18.19.3)
   vite-plugin-html:
     specifier: ^3.2.0
     version: 3.2.0(vite@5.0.6)
@@ -765,8 +765,8 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
-  /@types/node@18.19.2:
-    resolution: {integrity: sha512-6wzfBdbWpe8QykUkXBjtmO3zITA0A3FIjoy+in0Y2K4KrCiRhNYJIdwAPDffZ3G6GnaKaSLSEa9ZuORLfEoiwg==}
+  /@types/node@18.19.3:
+    resolution: {integrity: sha512-k5fggr14DwAytoA/t8rPrIz++lXK7/DqckthCmoZOKNsEbJkId4Z//BqgApXBUGrGddrigYa1oqheo/7YmW4rg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -964,7 +964,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.5)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.0.6(@types/node@18.19.2)
+      vite: 5.0.6(@types/node@18.19.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3043,10 +3043,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 5.0.6(@types/node@18.19.2)
+      vite: 5.0.6(@types/node@18.19.3)
     dev: true
 
-  /vite@5.0.6(@types/node@18.19.2):
+  /vite@5.0.6(@types/node@18.19.3):
     resolution: {integrity: sha512-MD3joyAEBtV7QZPl2JVVUai6zHms3YOmLR+BpMzLlX2Yzjfcc4gTgNi09d/Rua3F4EtC8zdwPU8eQYyib4vVMQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3074,7 +3074,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.19.2
+      '@types/node': 18.19.3
       esbuild: 0.19.8
       postcss: 8.4.32
       rollup: 4.6.1

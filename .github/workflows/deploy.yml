@@ -40,7 +40,7 @@ jobs:
           BASE_PATH: ${{ steps.config.outputs.base_path }}
 
       - name: Deploy | Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 

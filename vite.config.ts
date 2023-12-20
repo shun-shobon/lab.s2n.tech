@@ -12,12 +12,7 @@ export default defineConfig(async () => {
 	return {
 		root: "src",
 		base: process.env["BASE_PATH"] ?? "/",
-		plugins: [
-			react(),
-			createHtmlPlugin({
-				minify: false,
-			}),
-		],
+		plugins: [react(), createHtmlPlugin()],
 		build: {
 			outDir: "../dist",
 			emptyOutDir: true,

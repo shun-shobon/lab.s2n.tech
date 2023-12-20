@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -33,14 +33,14 @@ jobs:
         id: config
         uses: actions/configure-pages@v4
 
-      - name: Build | Build
+      - name: Run | Build
         run: pnpm build
         env:
           NODE_ENV: production
           BASE_PATH: ${{ steps.config.outputs.base_path }}
 
       - name: Deploy | Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
 

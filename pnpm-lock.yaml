@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@shun-shobon/eslint-config':
-    specifier: ^0.4.6
-    version: 0.4.6(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.4.7
+    version: 0.4.7(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.1
     version: 0.2.1(prettier@3.1.1)
@@ -754,8 +754,8 @@ packages:
     dev: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.4.6(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-3wofd6mfzxYHFXhjntQe74foxp/eDk8wb1cKqvLAQo1gytxPSLANQTfIZPD+fYZagOzJTHZt7AnvMtFRQyt6bw==}
+  /@shun-shobon/eslint-config@0.4.7(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-vs2O8fpLZCuplmsbhdNEBRUpY1OT9XdfLVr4RpDleuYgoo64uQo0u9AnoXIuew1PY1SNs1ka7c3otlbYCtxvnQ==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -766,7 +766,7 @@ packages:
       astro-eslint-parser: 0.16.0
       eslint: 8.56.0
       eslint-config-flat-gitignore: 0.1.2
-      eslint-define-config: 2.0.0
+      eslint-define-config: 2.1.0
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.16.0)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
       eslint-plugin-astro: 0.31.0(eslint@8.56.0)
       eslint-plugin-i: 2.29.1(@typescript-eslint/parser@6.16.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
@@ -1903,8 +1903,8 @@ packages:
       parse-gitignore: 2.0.0
     dev: true
 
-  /eslint-define-config@2.0.0:
-    resolution: {integrity: sha512-M8ao9mAE35BGwjZeT8ZlsRA42wcJHWS29Avd0qfeclRXig6uTnGXcaO7UxVyFzUA1VJtxeV/acw4KrhJA3JqxQ==}
+  /eslint-define-config@2.1.0:
+    resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
     dev: true
 

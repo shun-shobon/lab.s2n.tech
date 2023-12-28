@@ -19,7 +19,7 @@
 		"three": "^0.160.0"
 	},
 	"devDependencies": {
-		"@shun-shobon/eslint-config": "^0.4.7",
+		"@shun-shobon/eslint-config": "^0.4.8",
 		"@shun-shobon/prettier-config": "^0.2.2",
 		"@types/node": "^20.10.5",
 		"@types/react": "^18.2.45",

@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@shun-shobon/eslint-config':
-    specifier: ^0.4.8
-    version: 0.4.8(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.4.9
+    version: 0.4.9(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.3
     version: 0.2.3(prettier@3.1.1)
@@ -754,8 +754,8 @@ packages:
     dev: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.4.8(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-Ii2G4ONrQ5TeuE2tlvMeH2MaixIyIvfsCxu+IiE9Pa0o6tPzl/yKXMP6wQyG42iUwwaD4OPAfXMUtzVWO437SQ==}
+  /@shun-shobon/eslint-config@0.4.9(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-W40kpdIc7OLO1J7VK4g4y5v1KkVeSv++mIXFz5K5xR6Oy3YI8mYX415sC7b+BspzH1vyarjaUJEwK3nD2/vhQg==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -771,7 +771,7 @@ packages:
       eslint-plugin-astro: 0.31.0(eslint@8.56.0)
       eslint-plugin-i: 2.29.1(@typescript-eslint/parser@6.16.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
-      eslint-plugin-n: 16.5.0(eslint@8.56.0)
+      eslint-plugin-n: 16.6.0(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
       eslint-plugin-simple-import-sort: 10.0.0(eslint@8.56.0)
@@ -2083,8 +2083,8 @@ packages:
       object.fromentries: 2.0.7
     dev: true
 
-  /eslint-plugin-n@16.5.0(eslint@8.56.0):
-    resolution: {integrity: sha512-Hw02Bj1QrZIlKyj471Tb1jSReTl4ghIMHGuBGiMVmw+s0jOPbI4CBuYpGbZr+tdQ+VAvSK6FDSta3J4ib/SKHQ==}
+  /eslint-plugin-n@16.6.0(eslint@8.56.0):
+    resolution: {integrity: sha512-Ag3tYFF90lYU8JdHEl9qSSpeLYbVnO+Oj7sgPUarWUacv1mPL3d5h5yG4Bv3tLe71hrcxmgTi7oByYwKXaVatw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2094,6 +2094,7 @@ packages:
       eslint: 8.56.0
       eslint-plugin-es-x: 7.5.0(eslint@8.56.0)
       get-tsconfig: 4.7.2
+      globals: 13.24.0
       ignore: 5.3.0
       is-builtin-module: 3.2.1
       is-core-module: 2.13.1

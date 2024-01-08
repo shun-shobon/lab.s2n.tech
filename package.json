@@ -20,7 +20,7 @@
 	},
 	"devDependencies": {
 		"@shun-shobon/eslint-config": "^0.4.11",
-		"@shun-shobon/prettier-config": "^0.2.3",
+		"@shun-shobon/prettier-config": "^0.2.4",
 		"@types/node": "^20.10.7",
 		"@types/react": "^18.2.47",
 		"@types/react-dom": "^18.2.18",

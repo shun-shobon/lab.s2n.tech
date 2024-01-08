@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@shun-shobon/eslint-config':
-    specifier: ^0.4.11
-    version: 0.4.11(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.5.1
+    version: 0.5.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.4
     version: 0.2.4(prettier@3.1.1)
@@ -747,8 +747,8 @@ packages:
     dev: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.4.11(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-XUHf8cH+1BQue83b3WE8BngRSL9jTfG1i6Vj5n9D7XjO2P9Okl/c2bTvUJD91GVxnh/NhgvBG+HGKXRuaTimvw==}
+  /@shun-shobon/eslint-config@0.5.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-vkORQMNncS/jYm6K8H+mO2z1G8sRFVEiaIKS+7XTRug5RaW6KCz0GlJJOvw657IZFWW5nsfNhhYi21PBFRcT9Q==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:

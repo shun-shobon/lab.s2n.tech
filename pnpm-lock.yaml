@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@shun-shobon/eslint-config':
-    specifier: ^0.6.0
-    version: 0.6.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.6.1
+    version: 0.6.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.4
     version: 0.2.4(prettier@3.1.1)
@@ -747,8 +747,8 @@ packages:
     dev: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.6.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-iRcR+3tN4KY6OiYvnHYoloDy4ZkH57hQPaopkmtoinDsakKFNYpHBc4RYxCN37UKFosdM5zxR0bb6XDrYJJcHw==}
+  /@shun-shobon/eslint-config@0.6.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-Kmv5m1Ycy4kUZ3IS0fHKRHC0duB3DDzEGYeZOWaBdFU2RJUuSFPZz7NQ0aI5go80dt5cNY8x6pjRYf6AIWTG0Q==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -764,7 +764,7 @@ packages:
       eslint-plugin-astro: 0.31.0(eslint@8.56.0)
       eslint-plugin-i: 2.29.1(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
-      eslint-plugin-n: 16.6.1(eslint@8.56.0)
+      eslint-plugin-n: 16.6.2(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
       eslint-plugin-simple-import-sort: 10.0.0(eslint@8.56.0)
@@ -2038,8 +2038,8 @@ packages:
       object.fromentries: 2.0.7
     dev: true
 
-  /eslint-plugin-n@16.6.1(eslint@8.56.0):
-    resolution: {integrity: sha512-M1kE5bVQRLBMDYRZwDhWzlzbp370SRRRC1MHqq4I3L2Tatey+9/2csc5mwLDPlmhJaDvkojbrNUME5/llpRyDg==}
+  /eslint-plugin-n@16.6.2(eslint@8.56.0):
+    resolution: {integrity: sha512-6TyDmZ1HXoFQXnhCTUjVFULReoBPOAjpuiKELMkeP40yffI/1ZRO+d9ug/VC6fqISo2WkuIBk3cvuRPALaWlOQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'

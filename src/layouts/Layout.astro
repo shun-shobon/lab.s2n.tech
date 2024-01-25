@@ -1,0 +1,25 @@
+---
+import { siteName } from "~/config";
+
+export interface Props {
+	title?: string;
+	children: unknown;
+}
+
+const { title: rawTitle } = Astro.props;
+
+const title = rawTitle ? `${rawTitle} | ${siteName}` : siteName;
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

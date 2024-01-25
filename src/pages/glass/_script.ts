@@ -1,13 +1,12 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
-import { range } from "../utils/range";
-import skyboxBack from "./assets/skybox-back.png";
-import skyboxBottom from "./assets/skybox-bottom.png";
-import skyboxFront from "./assets/skybox-front.png";
-import skyboxLeft from "./assets/skybox-left.png";
-import skyboxRight from "./assets/skybox-right.png";
-import skyboxTop from "./assets/skybox-top.png";
+import skyboxBack from "./_assets/skybox-back.png";
+import skyboxBottom from "./_assets/skybox-bottom.png";
+import skyboxFront from "./_assets/skybox-front.png";
+import skyboxLeft from "./_assets/skybox-left.png";
+import skyboxRight from "./_assets/skybox-right.png";
+import skyboxTop from "./_assets/skybox-top.png";
 
 class Glass {
 	readonly #canvas: HTMLCanvasElement;
@@ -15,14 +14,14 @@ class Glass {
 	readonly #camera: THREE.PerspectiveCamera;
 	readonly #renderer: THREE.WebGLRenderer;
 	readonly #controls: OrbitControls;
-	readonly #glasses: THREE.Mesh[];
+	readonly #torus: THREE.Mesh;
 
 	constructor(canvas: HTMLCanvasElement, skybox: THREE.CubeTexture) {
 		this.#canvas = canvas;
 		this.#scene = new THREE.Scene();
 		this.#scene.background = skybox;
 		this.#camera = new THREE.PerspectiveCamera(
-			60,
+			75,
 			this.#canvas.width / this.#canvas.height,
 			0.1,
 			1000,
@@ -30,6 +29,7 @@ class Glass {
 		this.#camera.position.z = -5;
 
 		this.#controls = new OrbitControls(this.#camera, this.#canvas);
+		this.#controls.autoRotate = true;
 
 		this.#renderer = new THREE.WebGLRenderer({
 			canvas: this.#canvas,
@@ -37,37 +37,20 @@ class Glass {
 		});
 
 		const envMap = skybox.clone();
+		// CubeRefractionMappingにするとガラスのような透過効果が出る
+		// デフォルトはCubeReflectionMapping(反射のみ)
 		envMap.mapping = THREE.CubeRefractionMapping;
-
+		const geometry = new THREE.TorusGeometry();
 		const material = new THREE.MeshBasicMaterial({
-			color: 0x88_88_88,
+			color: 0xcc_cc_cc,
 			envMap,
-			refractionRatio: 0.9,
-			reflectivity: 0.95,
+			// 屈折率
+			refractionRatio: 0.4,
+			// 反射率(低くすると元の色が見える)
+			reflectivity: 0.9,
 		});
-
-		this.#glasses = range(0, 30).map(() => {
-			const geometry = new THREE.TetrahedronGeometry();
-			const mesh = new THREE.Mesh(geometry, material);
-
-			mesh.rotation.x = Math.random() * Math.PI * 2;
-			mesh.rotation.y = Math.random() * Math.PI * 2;
-			mesh.rotation.z = Math.random() * Math.PI * 2;
-
-			mesh.position.x = ((Math.random() + Math.random()) / 2) * 10 - 5;
-			mesh.position.y = Math.random() * 20 - 10;
-			mesh.position.z = Math.random() * 10 - 3;
-
-			mesh.scale.x = Math.random() * 0.5 + 0.2;
-			mesh.scale.y = Math.random() * 0.5 + 0.2;
-			mesh.scale.z = Math.random() * 0.5 + 0.2;
-
-			return mesh;
-		});
-
-		this.#glasses.forEach((glass) => {
-			this.#scene.add(glass);
-		});
+		this.#torus = new THREE.Mesh(geometry, material);
+		this.#scene.add(this.#torus);
 
 		this.#resize();
 
@@ -94,18 +77,8 @@ class Glass {
 
 		this.#controls.update();
 
-		this.#glasses.forEach((glass) => {
-			glass.position.y += 0.005;
-
-			glass.rotation.x += 0.001;
-			glass.rotation.y += 0.001;
-
-			if (glass.position.y > 10) {
-				glass.position.x = ((Math.random() + Math.random()) / 2) * 10 - 5;
-				glass.position.y = Math.random() * 3 - 10;
-				glass.position.z = Math.random() * 10 - 3;
-			}
-		});
+		this.#torus.rotation.x += 0.01;
+		this.#torus.rotation.y += 0.01;
 
 		this.#renderer.render(this.#scene, this.#camera);
 	}
@@ -114,18 +87,18 @@ class Glass {
 // Skyboxのテクスチャ
 // x+-、y+-、z+-の順に指定する
 const urls = [
-	skyboxRight,
-	skyboxLeft,
-	skyboxTop,
-	skyboxBottom,
-	skyboxFront,
-	skyboxBack,
+	skyboxRight.src,
+	skyboxLeft.src,
+	skyboxTop.src,
+	skyboxBottom.src,
+	skyboxFront.src,
+	skyboxBack.src,
 ];
 
 const skybox = await new THREE.CubeTextureLoader().loadAsync(urls);
 
 // eslint-disable-next-line typescript/non-nullable-type-assertion-style
-const canvas = document.querySelector("#canvas") as HTMLCanvasElement;
+const canvas = document.querySelector("#canvas");
 const glass = new Glass(canvas, skybox);
 
 glass.run();

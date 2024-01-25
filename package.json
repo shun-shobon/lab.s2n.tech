@@ -16,26 +16,17 @@
 	},
 	"dependencies": {
 		"astro": "^4.2.4",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"three": "^0.161.0"
+		"three": "^0.160.1"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.4.1",
 		"@shun-shobon/eslint-config": "^0.6.7",
 		"@shun-shobon/prettier-config": "^0.2.5",
-		"@types/node": "^20.11.6",
-		"@types/react": "^18.2.48",
-		"@types/react-dom": "^18.2.18",
-		"@types/three": "^0.161.2",
-		"@vitejs/plugin-react": "^4.2.1",
+		"@types/three": "^0.160.0",
 		"astro-compress": "^2.2.8",
 		"eslint": "^8.56.0",
-		"fast-glob": "^3.3.2",
 		"prettier": "^3.2.4",
 		"sharp": "^0.33.2",
-		"typescript": "5.3.3",
-		"vite": "^5.0.12",
-		"vite-plugin-html": "^3.2.2"
+		"typescript": "5.3.3"
 	}
 }

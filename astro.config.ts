@@ -1,3 +1,4 @@
+import cloudflare from "@astrojs/cloudflare";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 
@@ -7,5 +8,9 @@ export default defineConfig({
 	build: {
 		format: "file",
 	},
+	output: "hybrid",
+	adapter: cloudflare({
+		imageService: "compile",
+	}),
 	integrations: [compress()],
 });

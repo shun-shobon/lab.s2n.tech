@@ -4,7 +4,7 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://jo-ken.info/",
+	site: "https://lab.s2n.tech/",
 	build: {
 		format: "file",
 	},

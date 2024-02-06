@@ -125,9 +125,10 @@ const urls = [
 
 const skybox = await new THREE.CubeTextureLoader().loadAsync(urls);
 
-// eslint-disable-next-line typescript/non-nullable-type-assertion-style
-const canvas = document.querySelector("#canvas");
-const glass = new Glass(canvas, skybox);
+const $canvas = document.querySelector("#canvas");
+if (!$canvas) throw new Error("canvas is not found");
+
+const glass = new Glass($canvas as HTMLCanvasElement, skybox);
 
 glass.run();
 

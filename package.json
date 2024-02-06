@@ -15,17 +15,17 @@
 		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
-		"astro": "^4.2.4",
-		"three": "^0.160.1"
+		"astro": "^4.3.2",
+		"three": "^0.161.0"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.4.1",
-		"@shun-shobon/eslint-config": "^0.6.7",
-		"@shun-shobon/prettier-config": "^0.2.5",
-		"@types/three": "^0.160.0",
-		"astro-compress": "^2.2.8",
+		"@shun-shobon/eslint-config": "^0.6.9",
+		"@shun-shobon/prettier-config": "^0.3.0",
+		"@types/three": "^0.161.2",
+		"astro-compress": "^2.2.9",
 		"eslint": "^8.56.0",
-		"prettier": "^3.2.4",
+		"prettier": "^3.2.5",
 		"sharp": "^0.33.2",
 		"typescript": "5.3.3"
 	}

@@ -1,13 +1,14 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
-import { range } from "../utils/range";
-import skyboxBack from "./assets/skybox-back.png";
-import skyboxBottom from "./assets/skybox-bottom.png";
-import skyboxFront from "./assets/skybox-front.png";
-import skyboxLeft from "./assets/skybox-left.png";
-import skyboxRight from "./assets/skybox-right.png";
-import skyboxTop from "./assets/skybox-top.png";
+import { range } from "~/utils/range";
+
+import skyboxBack from "./_assets/skybox-back.png";
+import skyboxBottom from "./_assets/skybox-bottom.png";
+import skyboxFront from "./_assets/skybox-front.png";
+import skyboxLeft from "./_assets/skybox-left.png";
+import skyboxRight from "./_assets/skybox-right.png";
+import skyboxTop from "./_assets/skybox-top.png";
 
 class Glass {
 	readonly #canvas: HTMLCanvasElement;
@@ -114,19 +115,20 @@ class Glass {
 // Skyboxのテクスチャ
 // x+-、y+-、z+-の順に指定する
 const urls = [
-	skyboxRight,
-	skyboxLeft,
-	skyboxTop,
-	skyboxBottom,
-	skyboxFront,
-	skyboxBack,
+	skyboxRight.src,
+	skyboxLeft.src,
+	skyboxTop.src,
+	skyboxBottom.src,
+	skyboxFront.src,
+	skyboxBack.src,
 ];
 
 const skybox = await new THREE.CubeTextureLoader().loadAsync(urls);
 
-// eslint-disable-next-line typescript/non-nullable-type-assertion-style
-const canvas = document.querySelector("#canvas") as HTMLCanvasElement;
-const glass = new Glass(canvas, skybox);
+const $canvas = document.querySelector("#canvas");
+if (!$canvas) throw new Error("canvas is not found");
+
+const glass = new Glass($canvas as HTMLCanvasElement, skybox);
 
 glass.run();
 

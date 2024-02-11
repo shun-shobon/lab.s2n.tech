@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.5.2
     version: 0.5.2(prettier@3.2.5)(typescript@5.3.3)
   '@shun-shobon/eslint-config':
-    specifier: ^0.7.0
-    version: 0.7.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.7.1
+    version: 0.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.3.1
     version: 0.3.1(prettier@3.2.5)
@@ -1416,8 +1416,8 @@ packages:
     dev: false
     optional: true
 
-  /@shun-shobon/eslint-config@0.7.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-g5y9wU2awHcxTQl+OZnyJ0P2jgwsCDRRQK6skubO/rHQwkaqzqk4jagjKi7tpbZ+EwdU2aCoYzznhOJGhqqThA==}
+  /@shun-shobon/eslint-config@0.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-mNGZmbNvlvDmidMjIZshYPLC7wwRvUAkzla9Z7F+sFxJoKaxxwU32xWeIqWR/fJrPQyiFmP7Y6IrTNHsORCwVg==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -1436,10 +1436,10 @@ packages:
       eslint-plugin-n: 16.6.2(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
-      eslint-plugin-simple-import-sort: 10.0.0(eslint@8.56.0)
+      eslint-plugin-simple-import-sort: 12.0.0(eslint@8.56.0)
       eslint-plugin-storybook: 0.6.15(eslint@8.56.0)(typescript@5.3.3)
       eslint-plugin-unicorn: 51.0.1(eslint@8.56.0)
-      globals: 13.24.0
+      globals: 14.0.0
       local-pkg: 0.5.0
     transitivePeerDependencies:
       - eslint-import-resolver-node
@@ -3320,8 +3320,8 @@ packages:
       string.prototype.matchall: 4.0.10
     dev: true
 
-  /eslint-plugin-simple-import-sort@10.0.0(eslint@8.56.0):
-    resolution: {integrity: sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==}
+  /eslint-plugin-simple-import-sort@12.0.0(eslint@8.56.0):
+    resolution: {integrity: sha512-8o0dVEdAkYap0Cn5kNeklaKcT1nUsa3LITWEuFk3nJifOoD+5JQGoyDUW2W/iPWwBsNBJpyJS9y4je/BgxLcyQ==}
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:
@@ -3796,6 +3796,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+    dev: true
+
+  /globals@14.0.0:
+    resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
     dev: true
 
   /globalthis@1.0.3:

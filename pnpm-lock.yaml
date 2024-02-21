@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^9.0.1
-    version: 9.0.1(astro@4.4.1)
+    version: 9.0.1(astro@4.4.2)
   astro:
-    specifier: ^4.4.1
-    version: 4.4.1(typescript@5.3.3)
+    specifier: ^4.4.2
+    version: 4.4.2(typescript@5.3.3)
   three:
     specifier: ^0.161.0
     version: 0.161.0
@@ -76,7 +76,7 @@ packages:
       - prettier-plugin-astro
     dev: true
 
-  /@astrojs/cloudflare@9.0.1(astro@4.4.1):
+  /@astrojs/cloudflare@9.0.1(astro@4.4.2):
     resolution: {integrity: sha512-ygiW2jhUEyi0timPhk5St3iuEbmCJ1zGrnQJDNQe6VrKI0floJOGqnIB2LyagnxX45Lk7Hrm+LZmw+imK1ETUQ==}
     peerDependencies:
       astro: ^4.2.0
@@ -84,7 +84,7 @@ packages:
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240208.0
       '@iarna/toml': 2.2.5
-      astro: 4.4.1(typescript@5.3.3)
+      astro: 4.4.2(typescript@5.3.3)
       dotenv: 16.4.4
       esbuild: 0.19.12
       find-up: 6.3.0
@@ -2113,8 +2113,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.4.1(typescript@5.3.3):
-    resolution: {integrity: sha512-nJLgNg8UXKBJYXjWtekgv1TYZES++LAdShgyKL8L5yJMeiqlDSO+/Laq5VfRKoL9hzBdyolJMB0WDE/+bRZytg==}
+  /astro@4.4.2(typescript@5.3.3):
+    resolution: {integrity: sha512-r1djG61ABvZ9n73vaTW6nTKnMvWY1LQhPpBtzoA2OI2RAk/ptzsqK9ozkAG1qXO2bW3NLJi6pfMxxpngNAALyQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:

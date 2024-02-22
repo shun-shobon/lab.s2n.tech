@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^9.0.1
-    version: 9.0.1(astro@4.4.2)
+    version: 9.0.1(astro@4.4.3)
   astro:
-    specifier: ^4.4.2
-    version: 4.4.2(typescript@5.3.3)
+    specifier: ^4.4.3
+    version: 4.4.3(typescript@5.3.3)
   three:
     specifier: ^0.161.0
     version: 0.161.0
@@ -76,7 +76,7 @@ packages:
       - prettier-plugin-astro
     dev: true
 
-  /@astrojs/cloudflare@9.0.1(astro@4.4.2):
+  /@astrojs/cloudflare@9.0.1(astro@4.4.3):
     resolution: {integrity: sha512-ygiW2jhUEyi0timPhk5St3iuEbmCJ1zGrnQJDNQe6VrKI0floJOGqnIB2LyagnxX45Lk7Hrm+LZmw+imK1ETUQ==}
     peerDependencies:
       astro: ^4.2.0
@@ -84,7 +84,7 @@ packages:
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240208.0
       '@iarna/toml': 2.2.5
-      astro: 4.4.2(typescript@5.3.3)
+      astro: 4.4.3(typescript@5.3.3)
       dotenv: 16.4.4
       esbuild: 0.19.12
       find-up: 6.3.0
@@ -2113,8 +2113,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.4.2(typescript@5.3.3):
-    resolution: {integrity: sha512-r1djG61ABvZ9n73vaTW6nTKnMvWY1LQhPpBtzoA2OI2RAk/ptzsqK9ozkAG1qXO2bW3NLJi6pfMxxpngNAALyQ==}
+  /astro@4.4.3(typescript@5.3.3):
+    resolution: {integrity: sha512-9Ih+2mJv+i3XgGfU8m9evkNU7NEQWvOhqGsskrCwKmltuTtLol2hPw+eIfE49Yfktzfj5qLC6ZGkPxCJu5gkhA==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -2559,9 +2559,11 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -4139,6 +4141,7 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
 
   /is-async-function@2.0.0:
     resolution: {integrity: sha512-Y1JXKrfykRJGdlDwdKlLpLyMIiWqWvuSd17TvZk68PLAOGOoF4Xyav1z0Xhoi+gCYjZVeC5SI+hYFOfvXmGRCA==}
@@ -6311,6 +6314,7 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
 

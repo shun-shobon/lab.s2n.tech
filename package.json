@@ -23,7 +23,7 @@
 		"@astrojs/check": "^0.5.10",
 		"@shun-shobon/eslint-config": "^0.7.2",
 		"@shun-shobon/prettier-config": "^0.3.1",
-		"@types/three": "^0.162.0",
+		"@types/three": "^0.163.0",
 		"astro-compress": "^2.2.20",
 		"eslint": "^8.57.0",
 		"prettier": "^3.2.5",

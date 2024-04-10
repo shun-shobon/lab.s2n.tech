@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^9.2.1",
-		"astro": "^4.5.17",
+		"astro": "^4.5.18",
 		"three": "^0.163.0"
 	},
 	"devDependencies": {

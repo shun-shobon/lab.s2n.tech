@@ -15,7 +15,7 @@
 		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^9.2.1",
+		"@astrojs/cloudflare": "^10.1.0",
 		"astro": "^4.6.1",
 		"three": "^0.163.0"
 	},

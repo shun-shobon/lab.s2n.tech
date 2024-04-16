@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@astrojs/cloudflare':
     specifier: ^10.1.0
-    version: 10.1.0(astro@4.6.1)
+    version: 10.1.0(astro@4.6.2)
   astro:
-    specifier: ^4.6.1
-    version: 4.6.1(typescript@5.4.5)
+    specifier: ^4.6.2
+    version: 4.6.2(typescript@5.4.5)
   three:
     specifier: ^0.163.0
     version: 0.163.0
@@ -73,7 +73,7 @@ packages:
       - prettier-plugin-astro
     dev: true
 
-  /@astrojs/cloudflare@10.1.0(astro@4.6.1):
+  /@astrojs/cloudflare@10.1.0(astro@4.6.2):
     resolution: {integrity: sha512-26+mkkMNQ7lHQ9wEwPxNS/zUEZj/emYkHTmlmvgzkEq9J/vFI5QVtTur2R/ZIZ8SimpLqZJtsn584716Jqq1Nw==}
     peerDependencies:
       astro: ^4.2.0
@@ -81,7 +81,7 @@ packages:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240405.0
-      astro: 4.6.1(typescript@5.4.5)
+      astro: 4.6.2(typescript@5.4.5)
       esbuild: 0.19.12
       miniflare: 3.20240405.1
       tiny-glob: 0.2.9
@@ -1466,6 +1466,10 @@ packages:
       '@babel/types': 7.24.0
     dev: false
 
+  /@types/cookie@0.5.4:
+    resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+    dev: false
+
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -2034,8 +2038,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.6.1(typescript@5.4.5):
-    resolution: {integrity: sha512-gcL22NEhuRi4wu9/x5Kn2eJf7nT6GeU5BxdN6AHbUnX6UzEDIWtpgHs5lBIZYExKbHKN9PjEGXWQzQtFwLU+5g==}
+  /astro@4.6.2(typescript@5.4.5):
+    resolution: {integrity: sha512-Kl+Wd7MJMQFnI3+V0JxF4HPbs8M67eltqQgtztReOwDLSl0VnOd39rM61W/3LEh10FZ0F13xrDgtdgfXzuLVbg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -2050,6 +2054,7 @@ packages:
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
+      '@types/cookie': 0.5.4
       acorn: 8.11.3
       aria-query: 5.3.0
       axobject-query: 4.0.0

@@ -23,7 +23,7 @@
 		"@astrojs/check": "^0.5.10",
 		"@shun-shobon/eslint-config": "^0.9.4",
 		"@shun-shobon/prettier-config": "^0.4.0",
-		"@types/three": "^0.163.0",
+		"@types/three": "^0.164.0",
 		"eslint": "^8.57.0",
 		"prettier": "^3.2.5",
 		"typescript": "5.4.5",

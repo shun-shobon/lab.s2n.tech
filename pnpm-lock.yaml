@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/cloudflare':
         specifier: ^10.2.6
-        version: 10.2.6(astro@4.8.6(@types/node@20.12.12)(typescript@5.4.5))
+        version: 10.2.6(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))
       astro:
-        specifier: ^4.8.6
-        version: 4.8.6(@types/node@20.12.12)(typescript@5.4.5)
+        specifier: ^4.8.7
+        version: 4.8.7(@types/node@20.12.12)(typescript@5.4.5)
       three:
         specifier: ^0.164.1
         version: 0.164.1
@@ -1409,8 +1409,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.8.6:
-    resolution: {integrity: sha512-psHIfK+e+bMPhRwghV9yCGH/uc1jvY4DHmDZdoEepax9yA7kzYH0wt3dpkqlcrO2zxl5jzSC3DmqZfkD6wnW9A==}
+  astro@4.8.7:
+    resolution: {integrity: sha512-bTtv6zv94+U5cQdwy89LWTnocEfJ2Tfy6vpYYSUthfj12HtOpk0ykGW7YBe9a69NHqPwivSOvRjXOxGKigL9qA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3874,12 +3874,12 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/cloudflare@10.2.6(astro@4.8.6(@types/node@20.12.12)(typescript@5.4.5))':
+  '@astrojs/cloudflare@10.2.6(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))':
     dependencies:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20240512.0
-      astro: 4.8.6(@types/node@20.12.12)(typescript@5.4.5)
+      astro: 4.8.7(@types/node@20.12.12)(typescript@5.4.5)
       esbuild: 0.19.12
       estree-walker: 3.0.3
       magic-string: 0.30.10
@@ -5127,7 +5127,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.8.6(@types/node@20.12.12)(typescript@5.4.5):
+  astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0

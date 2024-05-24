@@ -25,8 +25,8 @@ importers:
         specifier: ^0.12.2
         version: 0.12.2(@typescript-eslint/parser@7.10.0(eslint@8.57.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.10.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)
       '@shun-shobon/prettier-config':
-        specifier: ^0.4.0
-        version: 0.4.0(prettier@3.2.5)
+        specifier: ^0.4.1
+        version: 0.4.1(prettier@3.2.5)
       '@types/three':
         specifier: ^0.164.1
         version: 0.164.1
@@ -1119,8 +1119,8 @@ packages:
     peerDependencies:
       eslint: ^8.21.0
 
-  '@shun-shobon/prettier-config@0.4.0':
-    resolution: {integrity: sha512-N/vSqTmhHFYr9G7sNYh1eDGV+7MTrDBwTSvGidebMqYMuDaxNCqXfIWEaTfz7zgTbvzcroQrFEy/FkkML11JLw==}
+  '@shun-shobon/prettier-config@0.4.1':
+    resolution: {integrity: sha512-aubL02Y+CbVeAwqHCkBxwiteGime27oAtKSHkd9/CX51M2BzjjqVYwSrHimmjfL3uN/pxwHKZakwTb8cJjTFaQ==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -4778,7 +4778,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@shun-shobon/prettier-config@0.4.0(prettier@3.2.5)':
+  '@shun-shobon/prettier-config@0.4.1(prettier@3.2.5)':
     dependencies:
       local-pkg: 0.5.0
       prettier: 3.2.5

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/cloudflare':
-        specifier: ^10.3.0
-        version: 10.3.0(astro@4.10.1(@types/node@20.14.2)(typescript@5.4.5))
+        specifier: ^10.4.0
+        version: 10.4.0(astro@4.10.1(@types/node@20.14.2)(typescript@5.4.5))
       astro:
         specifier: ^4.10.1
         version: 4.10.1(@types/node@20.14.2)(typescript@5.4.5)
@@ -55,8 +55,8 @@ packages:
     peerDependencies:
       typescript: ^5.0.0
 
-  '@astrojs/cloudflare@10.3.0':
-    resolution: {integrity: sha512-3OqB3VB2BOnqQ7b/eou4Q8EixsaCFPpFHUIWSfscVjQouL9HD4vDkaT1oDAuou66dQl7Fdivmk55IdGlOKebSA==}
+  '@astrojs/cloudflare@10.4.0':
+    resolution: {integrity: sha512-OTBpdcDdv2aj10526g/LUkd/3tv1BFNQGRs1ELYEYcEJ5DKNQwoFFQHajIsxyS01RERFzTTmHJ0XvmTP32t+2A==}
     peerDependencies:
       astro: ^4.2.0
 
@@ -863,6 +863,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -870,6 +871,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -3867,6 +3869,7 @@ packages:
   wrangler@3.60.0:
     resolution: {integrity: sha512-8lW4E7VAhCVXy7AV7Vom2BsyjekIt15Aa8jnBLsfE2CxalzWQzx49BK25hOYhjHQT4GqBXeoNOZ43FrMQ+SUUA==}
     engines: {node: '>=16.17.0'}
+    deprecated: bug affecting usage of `wrangler pages deploy` with > 1000 assets in wrangler@3.60.0, fixed in wrangler@3.60.1
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20240605.0
@@ -3956,7 +3959,7 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/cloudflare@10.3.0(astro@4.10.1(@types/node@20.14.2)(typescript@5.4.5))':
+  '@astrojs/cloudflare@10.4.0(astro@4.10.1(@types/node@20.14.2)(typescript@5.4.5))':
     dependencies:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3

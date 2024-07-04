@@ -40,8 +40,8 @@ importers:
         specifier: 5.5.3
         version: 5.5.3
       wrangler:
-        specifier: ^3.63.0
-        version: 3.63.0(@cloudflare/workers-types@4.20240620.0)
+        specifier: ^3.63.1
+        version: 3.63.1(@cloudflare/workers-types@4.20240620.0)
 
 packages:
 
@@ -3782,8 +3782,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.63.0:
-    resolution: {integrity: sha512-FMIGorXhYN161S1qotoIlg9EqpfRsPqtB/fd9J+qXTJ5xpctq4meaQAmRKfLI87cQDdkjUXpQBJyNgBXw4i81Q==}
+  wrangler@3.63.1:
+    resolution: {integrity: sha512-fxMPNEyDc9pZNtQOuYqRikzv6lL5eP4S1zv7L/kw24uu1cCEmJ39j8bfJGzrAEqKDNsiFXVjEka0RjlpgEVWPg==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -3885,7 +3885,7 @@ snapshots:
       magic-string: 0.30.10
       miniflare: 3.20240620.0
       tiny-glob: 0.2.9
-      wrangler: 3.63.0(@cloudflare/workers-types@4.20240620.0)
+      wrangler: 3.63.1(@cloudflare/workers-types@4.20240620.0)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -8242,7 +8242,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240701.0
       '@cloudflare/workerd-windows-64': 1.20240701.0
 
-  wrangler@3.63.0(@cloudflare/workers-types@4.20240620.0):
+  wrangler@3.63.1(@cloudflare/workers-types@4.20240620.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)

@@ -20,7 +20,7 @@
 		"three": "^0.166.1"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.8.1",
+		"@astrojs/check": "^0.8.2",
 		"@shun-shobon/eslint-config": "^0.13.3",
 		"@shun-shobon/prettier-config": "^0.4.6",
 		"@types/three": "^0.166.0",

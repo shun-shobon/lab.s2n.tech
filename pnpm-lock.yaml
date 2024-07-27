@@ -28,8 +28,8 @@ importers:
         specifier: ^0.4.6
         version: 0.4.6(prettier@3.3.3)
       '@types/three':
-        specifier: ^0.167.0
-        version: 0.167.0
+        specifier: ^0.167.1
+        version: 0.167.1
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -1045,8 +1045,8 @@ packages:
   '@types/stats.js@0.17.3':
     resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
 
-  '@types/three@0.167.0':
-    resolution: {integrity: sha512-BC+Vbm0d6yMzct7dhTBe9ZjEh6ygupyn1k/UcZncIIS/5aNIbfvF77gQw1IFP09Oyj1UxWj0EUBBqc1GkqzsOw==}
+  '@types/three@0.167.1':
+    resolution: {integrity: sha512-OCd2Uv/8/4TbmSaIRFawrCOnDMLdpaa+QGJdhlUBmdfbHjLY8k6uFc0tde2/UvcaHQ6NtLl28onj/vJfofV+Tg==}
 
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
@@ -4700,7 +4700,7 @@ snapshots:
 
   '@types/stats.js@0.17.3': {}
 
-  '@types/three@0.167.0':
+  '@types/three@0.167.1':
     dependencies:
       '@tweenjs/tween.js': 23.1.2
       '@types/stats.js': 0.17.3

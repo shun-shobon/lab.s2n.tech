@@ -26,7 +26,7 @@
 		"@types/three": "^0.169.0",
 		"eslint": "^8.57.1",
 		"prettier": "^3.3.3",
-		"typescript": "5.6.2",
+		"typescript": "5.6.3",
 		"wrangler": "^3.80.2"
 	}
 }

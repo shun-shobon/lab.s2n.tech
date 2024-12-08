@@ -15,8 +15,8 @@ importers:
         specifier: ^4.16.16
         version: 4.16.16(@types/node@22.10.1)(rollup@4.28.0)(typescript@5.7.2)
       three:
-        specifier: ^0.170.0
-        version: 0.170.0
+        specifier: ^0.171.0
+        version: 0.171.0
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -3215,8 +3215,8 @@ packages:
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
-  three@0.170.0:
-    resolution: {integrity: sha512-FQK+LEpYc0fBD+J8g6oSEyyNzjp+Q7Ks1C568WWaoMRLW+TkNNWmenWeGgJjV105Gd+p/2ql1ZcjYvNiPZBhuQ==}
+  three@0.171.0:
+    resolution: {integrity: sha512-Y/lAXPaKZPcEdkKjh0JOAHVv8OOnv/NDJqm0wjfCzyQmfKxV7zvkwsnBgPBKTzJHToSOhRGQAGbPJObT59B/PQ==}
 
   tiny-glob@0.2.9:
     resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
@@ -7533,7 +7533,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  three@0.170.0: {}
+  three@0.171.0: {}
 
   tiny-glob@0.2.9:
     dependencies:

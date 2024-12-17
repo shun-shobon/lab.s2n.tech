@@ -24,7 +24,7 @@
 		"@shun-shobon/eslint-config": "^0.13.6",
 		"@shun-shobon/prettier-config": "^0.4.8",
 		"@types/three": "^0.170.0",
-		"eslint": "^8.57.1",
+		"eslint": "^9.17.0",
 		"prettier": "^3.4.2",
 		"typescript": "5.7.2",
 		"wrangler": "^3.95.0"

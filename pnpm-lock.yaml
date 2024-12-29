@@ -40,7 +40,7 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
       wrangler:
-        specifier: ^3.98.0
+        specifier: ^3.99.0
         version: 3.99.0(@cloudflare/workers-types@4.20241218.0)
 
 packages:

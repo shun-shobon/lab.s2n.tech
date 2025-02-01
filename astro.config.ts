@@ -1,4 +1,3 @@
-import cloudflare from "@astrojs/cloudflare";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
@@ -8,8 +7,5 @@ export default defineConfig({
 	build: {
 		format: "file",
 	},
-	output: "hybrid",
-	adapter: cloudflare({
-		imageService: "compile",
-	}),
+	output: "static",
 });

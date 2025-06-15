@@ -15,7 +15,7 @@
 		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
-		"astro": "^5.9.0",
+		"astro": "^5.9.2",
 		"three": "^0.177.0"
 	},
 	"devDependencies": {

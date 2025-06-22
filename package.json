@@ -20,9 +20,9 @@
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.4",
-		"@shun-shobon/style-guide": "^0.4.1",
+		"@shun-shobon/style-guide": "^0.4.2",
 		"@types/three": "^0.177.0",
-		"eslint": "^9.28.0",
+		"eslint": "^9.29.0",
 		"prettier": "^3.5.3",
 		"typescript": "5.8.3",
 		"wrangler": "^3.114.9"

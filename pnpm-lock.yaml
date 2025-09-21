@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       astro:
-        specifier: ^5.13.7
-        version: 5.13.7(@types/node@24.4.0)(rollup@4.50.1)(typescript@5.9.2)(yaml@2.8.1)
+        specifier: ^5.13.8
+        version: 5.13.9(@types/node@24.4.0)(rollup@4.50.1)(typescript@5.9.2)(yaml@2.8.1)
       three:
         specifier: ^0.180.0
         version: 0.180.0
@@ -1421,8 +1421,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.13.7:
-    resolution: {integrity: sha512-Of2tST7ErbE4y1dVb4aWDXaQSIRBAfraJ4jDqaA3PzPRJOn6Ina36+tQ+8BezjYqiWwRRJdOEE07PRAJXnsddw==}
+  astro@5.13.9:
+    resolution: {integrity: sha512-vwnJ9Db/X35G3n7F2KgcAAsQ7Du00s0ZFvB+Sx0w7Jl4fwit4+mHJbL4U2ZFxIo9tU07oZEey/2g1Awom7i0LQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -5215,7 +5215,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.13.7(@types/node@24.4.0)(rollup@4.50.1)(typescript@5.9.2)(yaml@2.8.1):
+  astro@5.13.9(@types/node@24.4.0)(rollup@4.50.1)(typescript@5.9.2)(yaml@2.8.1):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.7.2

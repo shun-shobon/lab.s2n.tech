@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       astro:
-        specifier: ^5.14.0
+        specifier: ^5.14.1
         version: 5.14.1(@types/node@24.5.2)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1)
       three:
         specifier: ^0.180.0

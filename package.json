@@ -4,7 +4,7 @@
 	"author": "Shuntaro Nishizawa <me@shun.technology> (https://github.com/shun-shobon)",
 	"license": "MIT",
 	"private": true,
-	"packageManager": "pnpm@10.18.0",
+	"packageManager": "pnpm@10.18.2",
 	"scripts": {
 		"build": "astro build",
 		"dev": "astro dev",

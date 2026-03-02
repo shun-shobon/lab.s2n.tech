@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Prepare | Comment deploy start
         if: github.event_name != 'push'
-        uses: mshick/add-pr-comment@v2
+        uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2
         with:
           message-id: cloudflare-deploy
           message: |
@@ -33,7 +33,7 @@ jobs:
             |<span aria-hidden="true">🔍</span> Latest deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
 
       - name: Setup | Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Setup | Node.js
         uses: shun-shobon/actions/setup-node@master
@@ -45,7 +45,7 @@ jobs:
 
       - name: Deploy | Cloudflare Pages
         id: cloudflare
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/pages-action@f0a1cd58cd66095dee69bfa18fa5efd1dde93bca # v1
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -54,7 +54,7 @@ jobs:
           directory: ./dist
 
       - name: Post Deploy | Comment deploy url
-        uses: mshick/add-pr-comment@v2
+        uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2
         with:
           message-id: cloudflare-deploy
           message: |

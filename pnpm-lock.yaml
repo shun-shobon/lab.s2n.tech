@@ -12,7 +12,7 @@ importers:
         specifier: ^5.18.0
         version: 5.18.0(rollup@4.59.0)(typescript@5.9.3)(yaml@2.8.2)
       three:
-        specifier: ^0.183.1
+        specifier: ^0.183.2
         version: 0.183.2
     devDependencies:
       '@astrojs/check':

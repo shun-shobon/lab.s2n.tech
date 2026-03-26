@@ -16,25 +16,25 @@ importers:
         version: 0.183.2
     devDependencies:
       '@astrojs/check':
-        specifier: ^0.9.4
+        specifier: 0.9.6
         version: 0.9.6(prettier-plugin-astro@0.14.1)(prettier@3.8.1)(typescript@5.9.3)
       '@shun-shobon/style-guide':
-        specifier: ^1.1.1
+        specifier: 1.6.0
         version: 1.6.0(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(prettier@3.8.1)(storybook@10.2.13(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
       '@types/three':
-        specifier: ^0.183.0
+        specifier: 0.183.1
         version: 0.183.1
       eslint:
-        specifier: ^9.39.3
+        specifier: 9.39.3
         version: 9.39.3
       prettier:
-        specifier: ^3.6.2
+        specifier: 3.8.1
         version: 3.8.1
       typescript:
         specifier: 5.9.3
         version: 5.9.3
       wrangler:
-        specifier: ^4.43.0
+        specifier: 4.69.0
         version: 4.69.0
 
 packages:
@@ -4883,8 +4883,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.51.0(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.51.0(typescript@5.9.3)
-      '@typescript-eslint/types': 8.51.0
+      '@typescript-eslint/tsconfig-utils': 8.56.1(typescript@5.9.3)
+      '@typescript-eslint/types': 8.56.1
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:

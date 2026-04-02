@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Prepare | Comment deploy start
         if: github.event_name != 'push'
-        uses: mshick/add-pr-comment@v2
+        uses: mshick/add-pr-comment@64b8e914979889d746c99dea15a76e77ef64580a # v3
         with:
           message-id: cloudflare-deploy
           message: |
@@ -54,7 +54,7 @@ jobs:
           directory: ./dist
 
       - name: Post Deploy | Comment deploy url
-        uses: mshick/add-pr-comment@v2
+        uses: mshick/add-pr-comment@64b8e914979889d746c99dea15a76e77ef64580a # v3
         with:
           message-id: cloudflare-deploy
           message: |

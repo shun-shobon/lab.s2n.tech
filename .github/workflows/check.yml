@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup | Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Setup | Node
-        uses: shun-shobon/actions/setup-node@master
+        uses: shun-shobon/actions/setup-node@38f26e71121faada44e5bfe4aea5d16697e14aa2 # master
         with:
           node-version-file: .tool-versions
 
@@ -31,10 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup | Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Setup | Node
-        uses: shun-shobon/actions/setup-node@master
+        uses: shun-shobon/actions/setup-node@38f26e71121faada44e5bfe4aea5d16697e14aa2 # master
         with:
           node-version-file: .tool-versions
 

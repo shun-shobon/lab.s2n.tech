@@ -15,11 +15,11 @@
 		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
-		"astro": "^5.18.0",
+		"astro": "^5.18.1",
 		"three": "^0.183.1"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.4",
+		"@astrojs/check": "^0.9.6",
 		"@shun-shobon/style-guide": "^1.1.1",
 		"@types/three": "^0.183.0",
 		"eslint": "^9.39.3",

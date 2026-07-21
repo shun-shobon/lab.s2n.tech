@@ -19,12 +19,12 @@
 		"three": "^0.185.1"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.6",
-		"@shun-shobon/style-guide": "^1.1.1",
-		"@types/three": "^0.185.0",
-		"eslint": "^9.39.3",
-		"prettier": "^3.8.1",
+		"@astrojs/check": "0.9.9",
+		"@shun-shobon/style-guide": "1.6.0",
+		"@types/three": "0.185.1",
+		"eslint": "9.39.5",
+		"prettier": "3.9.5",
 		"typescript": "5.9.3",
-		"wrangler": "^4.69.0"
+		"wrangler": "4.112.0"
 	}
 }

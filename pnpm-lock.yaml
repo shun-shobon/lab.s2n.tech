@@ -22,7 +22,7 @@ importers:
         specifier: ^1.1.1
         version: 1.6.0(@typescript-eslint/utils@8.65.0(eslint@9.39.5)(typescript@5.9.3))(eslint@9.39.5)(prettier@3.9.6)(storybook@10.5.4(prettier@3.9.6)(react@19.2.8))(typescript@5.9.3)
       '@types/three':
-        specifier: ^0.185.0
+        specifier: ^0.185.1
         version: 0.185.1
       eslint:
         specifier: ^9.39.3
